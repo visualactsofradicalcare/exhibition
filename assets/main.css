@@ -42,13 +42,34 @@ a:hover {
   color: hotpink;
 }
 
+.down-arrow{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  font-size: 3rem;
+  padding: 1.5vw;
+}
+
+.down-arrow a {
+  color: black;
+}
+
+.down-arrow a:visited {
+  color: black;
+}
+
+.down-arrow a:hover {
+  color: black;
+}
+
 .top-arrow{
   position: fixed;
   bottom: 0;
   right: 0;
   z-index: 100;
   font-size: 3rem;
-  padding: 30px;
+  padding: 1.5vw;
 
 }
 .top-arrow a {
@@ -164,6 +185,7 @@ text-transform: uppercase;
     height: 0;
     padding-bottom: 56.25%;
 }
+
 iframe {
     position: absolute;
     top: 0;
@@ -227,7 +249,7 @@ iframe {
 
 /* -------------------- MEDIA QUERIES -------------------- */
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
 
   .alevtina-quad {
     display: block;

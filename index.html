@@ -11,25 +11,38 @@ www.catwentworth.com -->
   <title>Visual Acts of Radical Care</title>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="assets/main.css" type="text/css" />
-
+  <script src='jquery-3.6.0.min.js'></script>
 </head>
 
 <body>
 
+  <div class="down-arrow">↓</div>
+
+  <div class="top-arrow" style="display: none;">
+    <a href="#">↑</a>
+  </div>
+
   <script>
-      var toTopButton = document.querySelector("#top-arrow");
-      toTopButton.style.display = "none";//by default should be hidden
-      document.querySelector('body').onscroll = function(){//whenever they scroll
-        if (window.scrollY > 300)//if scroll is 300px from top
-          toTopButton.style.display = "block";//if they scroll down, show
-        else
-          toTopButton.style.display = "none";//if they scroll up, hide
-      };
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y < 2000) {
+        $('.down-arrow').fadeIn();
+      } else {
+        $('.down-arrow').fadeOut();
+      }
+    });
   </script>
 
-  <div class="top-arrow" id="top-arrow">
-    <a href="#top">↑</a>
-  </div>
+  <script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 2000) {
+        $('.top-arrow').fadeIn();
+      } else {
+        $('.top-arrow').fadeOut();
+      }
+    });
+  </script>
 
   <div class="section" id="header">
     <div class="title" style=""><h1>Visual Acts of Radical Care<br>
@@ -129,7 +142,7 @@ www.catwentworth.com -->
     <div class="works">
       <div class="piece art-center-small">
         <div class="art-center-small-img">
-          <img class="artimage" src="assets/images/Rainbow_Black_Madonna.png" alt="">
+          <img class="artimage" src="assets/images/Rainbow_Black_Madonna_of_Częstochowa.png" alt="">
           <div class="caption"><i>Matka Boska z Tęczową Aureolą (Mother of God with a Rainbow Halo)</i>, 2019<br> 91 x 61 cm (h x w)<br> Digital Mixed Media Collage</div>
         </div>
       </div>
