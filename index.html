@@ -10,6 +10,7 @@ www.catwentworth.com -->
 <head>
   <title>Visual Acts of Radical Care</title>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/main.css" type="text/css" />
   <script src='jquery-3.6.0.min.js'></script>
 </head>
@@ -21,28 +22,6 @@ www.catwentworth.com -->
   <div class="top-arrow" style="display: none;">
     <a href="#">↑</a>
   </div>
-
-  <script>
-    $(document).scroll(function() {
-      var y = $(this).scrollTop();
-      if (y < 2000) {
-        $('.down-arrow').fadeIn();
-      } else {
-        $('.down-arrow').fadeOut();
-      }
-    });
-  </script>
-
-  <script>
-    $(document).scroll(function() {
-      var y = $(this).scrollTop();
-      if (y > 2000) {
-        $('.top-arrow').fadeIn();
-      } else {
-        $('.top-arrow').fadeOut();
-      }
-    });
-  </script>
 
   <div class="section" id="header">
     <div class="title" style=""><h1>Visual Acts of Radical Care<br>
@@ -405,6 +384,28 @@ www.catwentworth.com -->
       </a>
     </div>
   </div>
+
+  <script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y < 2000) {
+        $('.down-arrow').fadeIn();
+      } else {
+        $('.down-arrow').fadeOut();
+      }
+    });
+  </script>
+
+  <script>
+    $(document).scroll(function() {
+      var y = $(this).scrollTop();
+      if (y > 2000) {
+        $('.top-arrow').fadeIn();
+      } else {
+        $('.top-arrow').fadeOut();
+      }
+    });
+  </script>
 
 </body>
 </html>
