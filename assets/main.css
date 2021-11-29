@@ -2,8 +2,8 @@ body  {
   background-color: #dedede;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 2rem;
-  line-height: 2.6rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   letter-spacing: -0.3px;
 }
 
@@ -23,8 +23,8 @@ h2 {
 }
 
 h3 {
-  font-size: 5rem;
-  line-height: 5.2rem;
+  font-size: 3.5rem;
+  line-height: 4rem;
   letter-spacing: -0.1rem;
   font-weight: 400;
 }
@@ -46,21 +46,22 @@ a:hover {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 100 !important;
   font-size: 3rem;
   padding: 1.5vw;
+  /* mix-blend-mode: difference; */
 }
 
 .down-arrow a {
-  color: black;
+  color: green;
 }
 
 .down-arrow a:visited {
-  color: black;
+  color: green;
 }
 
 .down-arrow a:hover {
-  color: black;
+  color: green;
 }
 
 .top-arrow{
@@ -70,57 +71,57 @@ a:hover {
   z-index: 100;
   font-size: 3rem;
   padding: 1.5vw;
+  mix-blend-mode: difference;
 
 }
 .top-arrow a {
-  color: black;
+  color: green;
 }
 
 .top-arrow a:visited {
-  color: black;
+  color: green;
 }
 
 .top-arrow a:hover {
-  color: black;
+  color: green;
 }
 
 .section {
   margin: -1vw !important;
   padding: 3vw;
-  padding-bottom: 8vw;
+  padding-bottom: 10vw;
 }
 
 #header {
   margin-top: -40px !important;
 }
 
-.title{
-text-transform: uppercase;
-/* display: none; */
+.header-links {
+  z-index: 99;
 }
 
-.subtitle{
+.title{
+text-transform: uppercase;
+display: none;
+}
+
+.subtitle {
+margin-top: 500px;
 text-transform: uppercase;
 }
 
 .bio {
-  font-size: 1.4rem;
-  line-height: 2rem;
+  margin-right: 30%;
 }
 
 .caption {
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1.2rem;
   text-align: center;
   padding: 5px;
 }
 
 .section-title {
-  /* display: none; */
-}
-
-.section-title-svg {
-  margin: 30px 0 120px 0;
   display: none;
 }
 
@@ -257,6 +258,37 @@ iframe {
 
 
 
+/* -------------------- SECTION TITLE SVGs -------------------- */
+
+.section-svg {
+  z-index: 10;
+  margin: 70px 0 40px 0;
+  width: 100%;
+  fill: gray;
+  transform: scaleY(4);
+  mix-blend-mode: difference;
+  margin-bottom: 200px;
+}
+
+.svg-title {
+  padding-top: 120px;
+  width: inherit;
+  fill: green;
+  mix-blend-mode: difference;
+}
+
+.svg-introduction {
+  padding-bottom: 40px;
+}
+
+.svg-rainbow-mary {
+  padding-bottom: 40px;
+}
+
+.svg-title.shrink {
+}
+
+
 /* -------------------- MEDIA QUERIES -------------------- */
 
 @media screen and (max-width: 800px) {
@@ -275,6 +307,11 @@ iframe {
     font-size: 2rem;
     line-height: 2.4rem;
   } */
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
 
   .alevtina-quad {
     display: block;
